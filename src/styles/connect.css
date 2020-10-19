@@ -1,0 +1,22 @@
+.connect-bg {
+  padding: 100px 0 100px 0;
+  background-color: #0096ff;
+  color: #fff;
+  text-align: center;
+}
+.connect-text {
+  padding: 20px 0 0 0;
+  text-align: center;
+  font-style: oblique;
+}
+
+.icon-button {
+  padding: 5px;
+  margin: 10px;
+  background: none;
+  border: none;
+}
+
+.icon-button:hover {
+  background: none;
+}

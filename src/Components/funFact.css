@@ -1,0 +1,12 @@
+.fact-container {
+  font-style: italic;
+  font-size: 1.2em;
+  margin: 30px 0 30px 0;
+}
+
+.fun-fact {
+  font-weight: 700;
+  color: #fff;
+  background-color: #0096ff;
+  display: inline;
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="18" viewBox="0 0 34 18">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 85px;
+        fill: #fff;
+        font-family: Arial;
+        font-weight: 700;
+        font-style: italic;
+      }
+
+      .cls-2 {
+        fill: #0096ff;
+      }
+    </style>
+  </defs>
+  <text id="KZ" class="cls-1" transform="translate(-0.692 17.927) scale(0.293 0.295)">K<tspan class="cls-2">Z</tspan></text>
+</svg>
