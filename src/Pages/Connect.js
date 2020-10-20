@@ -16,23 +16,40 @@ function Connect() {
           <Logo />
           <p className="connect-text">be uncommon.</p>
           <p className="connect-text">
-            <Button className="icon-button">
+            <Button
+              href="https://www.linkedin.com/in/kevinzaki/"
+              variant="link"
+              className="icon-button"
+            >
               <FaLinkedinIn />
             </Button>
-            <Button className="icon-button">
+            <Button
+              href="https://www.github.com/kevinzaki"
+              variant="link"
+              className="icon-button"
+            >
               <FiGithub />
             </Button>
-            <Button className="icon-button">
+            <Button
+              href="https://www.leetcode.com/kevinzaki/"
+              variant="link"
+              className="icon-button"
+            >
               <SiLeetcode />
             </Button>
-            <Button className="icon-button">
+            <Button
+              href="https://www.instagram.com/kevinzaki/"
+              variant="link"
+              className="icon-button"
+            >
               <FiInstagram />
             </Button>
-            <Button className="icon-button">
-              <FiYoutube />
-            </Button>
 
-            <Button className="icon-button">
+            <Button
+              href="mailto:kevinzaki@gmail.com"
+              variant="link"
+              className="icon-button"
+            >
               <FiMail />
             </Button>
           </p>

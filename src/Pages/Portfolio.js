@@ -4,10 +4,60 @@ import CardColumns from "react-bootstrap/CardColumns";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import image from "../assets/image.png";
+import image2 from "../assets/image2.png";
+import image3 from "../assets/image3.png";
+import urge from "../assets/urge.png";
+import quantum from "../assets/quantum.png";
+import graphics from "../assets/graphics.png";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 
 function Portfolio() {
+  const portfolio = [
+    {
+      type: "APP",
+      title: "MAY I CARD GAME BUILT USING REACT NATIVE, SOCKET.IO, & NODE JS.",
+      details: "",
+      cardImage: image,
+      modalImage: image
+    },
+    {
+      type: "WEBSITE",
+      title: "LANDING PAGE WEBSITE BUILT USING REACT & NODE.",
+      details: "",
+      cardImage: image2,
+      modalImage: image2
+    },
+    {
+      type: "WEBSITE",
+      title: "MY PERSONAL PORTFOLIO BUILT USING REACT.",
+      details: "",
+      cardImage: image3,
+      modalImage: image3
+    },
+    {
+      type: "WEBSITE",
+      title: "ECOMMERCE WEBSITE FOR URGE SMOKE SHOP USING SHOPIFY.",
+      details: "",
+      cardImage: urge,
+      modalImage: urge
+    },
+    {
+      type: "GRAPHICS",
+      title: "HUNDREDS OF GRAPHICS MADE OVER 2-3 YEARDS.",
+      details: "",
+      cardImage: graphics,
+      modalImage: graphics
+    },
+    {
+      type: "CORPORATE BRANDING",
+      title:
+        "WEBSITE, BROCHURE, BUSINESS CARDS, & LOGO FOR QUANTUM LEGAL SOLUTIONS.",
+      details: "",
+      cardImage: quantum,
+      modalImage: quantum
+    }
+  ];
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -27,110 +77,32 @@ function Portfolio() {
           </Modal.Header>
           <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
             <Button variant="primary" onClick={handleClose}>
-              Save Changes
+              Close
             </Button>
           </Modal.Footer>
         </Modal>
+
         <CardColumns>
-          <Card onClick={() => setShow(!show)} className="bg-dark text-white">
-            <Card.Img src={image} alt="Card image" />
-            <Card.ImgOverlay>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-              <Card.Text>Last updated 3 mins ago</Card.Text>
-            </Card.ImgOverlay>
-          </Card>
-          <Card className="p-3">
-            <blockquote className="blockquote mb-0 card-body">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                posuere erat a ante.
-              </p>
-              <footer className="blockquote-footer">
-                <small className="text-muted">
-                  Someone famous in{" "}
-                  <cite title="Source Title">Source Title</cite>
-                </small>
-              </footer>
-            </blockquote>
-          </Card>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This card has supporting text below as a natural lead-in to
-                additional content.{" "}
-              </Card.Text>
-            </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">Last updated 3 mins ago</small>
-            </Card.Footer>
-          </Card>
-          <Card bg="primary" text="white" className="text-center p-3">
-            <blockquote className="blockquote mb-0 card-body">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                posuere erat a ante.
-              </p>
-              <footer className="blockquote-footer">
-                <small className="text-muted">
-                  Someone famous in{" "}
-                  <cite title="Source Title">Source Title</cite>
-                </small>
-              </footer>
-            </blockquote>
-          </Card>
-          <Card className="text-center">
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This card has supporting text below as a natural lead-in to
-                additional content.{" "}
-              </Card.Text>
-              <Card.Text>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <Card>
-            <Card.Img src="holder.js/100px160" />
-          </Card>
-          <Card className="text-right">
-            <blockquote className="blockquote mb-0 card-body">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                posuere erat a ante.
-              </p>
-              <footer className="blockquote-footer">
-                <small className="text-muted">
-                  Someone famous in{" "}
-                  <cite title="Source Title">Source Title</cite>
-                </small>
-              </footer>
-            </blockquote>
-          </Card>
-          <Card>
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content
-                than the first to show that equal height action.
-              </Card.Text>
-              <Card.Text>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Text>
-            </Card.Body>
-          </Card>
+          {portfolio.map((item, key) => {
+            return (
+              <Card
+                key={key}
+                onClick={() => setShow(!show)}
+                className="bg-dark text-white portfolio-card"
+              >
+                <Card.Img
+                  className="portfolio-card"
+                  src={item.cardImage}
+                  alt="Card image"
+                />
+                <Card.ImgOverlay>
+                  <Card.Title className="card-title">{item.type}</Card.Title>
+                  <Card.Text className="card-text">{item.title}</Card.Text>
+                </Card.ImgOverlay>
+              </Card>
+            );
+          })}
         </CardColumns>
       </Container>
     </div>

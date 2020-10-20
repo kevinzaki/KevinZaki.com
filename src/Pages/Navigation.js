@@ -16,7 +16,9 @@ function Navigation() {
             <Nav.Link href="#about">ABOUT</Nav.Link>
             <Nav.Link href="#work">WORK</Nav.Link>
             <Nav.Link href="#connect">CONNECT</Nav.Link>
-            <Nav.Link href="#resume">RESUME</Nav.Link>
+            <Nav.Link className="nav-color" href="#resume">
+              RESUME
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </div>
