@@ -1,5 +1,4 @@
 import React from "react";
-import Badge from "react-bootstrap/Badge";
 import "./funFact.css";
 
 function FunFact({ text }) {

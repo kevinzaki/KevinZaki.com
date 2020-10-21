@@ -16,7 +16,7 @@ function Navigation() {
             <Nav.Link href="#about">ABOUT</Nav.Link>
             <Nav.Link href="#work">WORK</Nav.Link>
             <Nav.Link href="#connect">CONNECT</Nav.Link>
-            <Nav.Link className="nav-color" href="#resume">
+            <Nav.Link className="nav-color" href="/resume.pdf">
               RESUME
             </Nav.Link>
           </Nav>

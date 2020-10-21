@@ -1,12 +1,13 @@
 .portfolio-bg {
   background-color: #161616;
   color: #fff;
-  padding: 80px 0 40px 0;
+  padding: 80px 0 80px 0;
 }
 
 .portfolio-card {
   border: none;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .card-title {
@@ -24,6 +25,53 @@
 
 a.nav-color {
   color: #0096ff !important;
+}
+.modal-content {
+  color: #9d9ca1;
+  border-radius: 20px;
+  background-color: #1c1c1e;
+  white-space: pre-line;
+}
+.modal-image {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.close {
+  color: #fff;
+  opacity: 100;
+}
+.modal-title {
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.modal-header {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  background-position-y: top;
+  background-position-x: left;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+  border: none;
+}
+.modal-body {
+  padding: 40px;
+}
+.card-columns .card {
+  margin-bottom: 1.25rem;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #0096ff;
 }
 
 @media (min-width: 768px) {

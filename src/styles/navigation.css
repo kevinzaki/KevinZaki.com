@@ -7,9 +7,17 @@
   font-weight: 800;
   font-size: 0.8rem;
 }
-.nav-link.active {
+.nav-link {
+  cursor: pointer;
   color: rgba(0, 150, 255, 1) !important;
 }
+
 a.nav-link {
+  cursor: pointer;
   color: rgba(255, 255, 255, 1) !important;
+}
+
+a.nav-link:hover {
+  cursor: pointer;
+  color: rgba(0, 150, 255, 1) !important;
 }

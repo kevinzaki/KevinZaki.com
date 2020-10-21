@@ -5,7 +5,7 @@ import "../styles/about.css";
 
 function About() {
   return (
-    <Container className="about-bg">
+    <Container id="about" className="about-bg">
       <p className="value-prop">
         I provide value by solving difficult business problems through
         engineering, design, and leadership.
@@ -19,11 +19,11 @@ function About() {
       </p>
       <FunFact text="I graduated magna cum laude in Computer Science from Kean University." />
       <p className="about">
-        I am very much the same person in my personal and professional life.  I
-        set goals, seek progress, and enjoy the journey.  I live a healthy
-        lifestyle which includes daily workouts and I try to train Jiu Jitsu as
-        much as I can - something that gives me immense satisfaction.  To
-        truly unwind I seek out comedic relief through stand up comedy,
+        I am very much the same personally as I am professionally.  I set goals,
+        seek progress, and enjoy the journey.  I live a healthy lifestyle which
+        includes daily running or weight lifting sessions.  I try to train Jiu
+        Jitsu as much as I can - something that gives me immense satisfaction. 
+        To truly unwind I seek out comedic relief through stand up comedy,
         podcasts, or just having a good time with friends.
       </p>
       <FunFact text="I am currently a Blue Belt in Brazilian Jiu Jitsu!" />
