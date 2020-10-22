@@ -17,7 +17,7 @@ function Introduction() {
               <li className="title titleOne">Software Engineer</li>
               <li className="title titleTwo">Designer</li>
               <li className="title titleThree">Entrepreneur</li>
-              <li className="title titleFour">Fitness Ethusiast</li>
+              <li className="title titleFour">Fitness Enthusiast</li>
               <li className="title titleFive">Jiu Jitsu Practitioner</li>
             </ul>
           </Col>
