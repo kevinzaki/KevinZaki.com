@@ -174,7 +174,7 @@ const portfolioData = [
   {
     type: "GRAPHICS",
     title: "HUNDREDS OF GRAPHIC DESIGN ITEMS",
-    blurb: "HUNDREDS OF GRAPHICS MADE OVER 2-3 YEARDS.",
+    blurb: "HUNDREDS OF GRAPHICS MADE OVER 2-3 YEARS.",
     details: (
       <p>
         Over the last several years I have designed hundreds if not thousands of

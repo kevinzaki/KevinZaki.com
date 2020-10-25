@@ -18,6 +18,8 @@ function Connect() {
           <p className="connect-text">
             <Button
               href="https://www.linkedin.com/in/kevinzaki/"
+              target="_blank"
+              rel="noopener noreferrer"
               variant="link"
               className="icon-button"
             >
@@ -25,6 +27,8 @@ function Connect() {
             </Button>
             <Button
               href="https://www.github.com/kevinzaki"
+              target="_blank"
+              rel="noopener noreferrer"
               variant="link"
               className="icon-button"
             >
@@ -32,6 +36,8 @@ function Connect() {
             </Button>
             <Button
               href="https://www.leetcode.com/kevinzaki/"
+              target="_blank"
+              rel="noopener noreferrer"
               variant="link"
               className="icon-button"
             >
@@ -39,6 +45,8 @@ function Connect() {
             </Button>
             <Button
               href="https://www.instagram.com/kevinzaki/"
+              target="_blank"
+              rel="noopener noreferrer"
               variant="link"
               className="icon-button"
             >
